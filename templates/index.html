@@ -64,6 +64,9 @@
     </div>
 
     <script>
+        // Define base URL for production
+        const baseURL = 'https://image-processing-app-r4mj.onrender.com'; // Update with your Render URL
+
         // Handle CSV upload form submission
         document.getElementById('uploadForm').addEventListener('submit', async function (event) {
             event.preventDefault();
@@ -81,7 +84,7 @@
             formData.append('file', fileInput.files[0]);
 
             try {
-                const response = await axios.post('http://localhost:8000/upload', formData, {
+                const response = await axios.post(`${baseURL}/upload`, formData, {
                     headers: { 'Content-Type': 'multipart/form-data' },
                     withCredentials: true  // Include this if the server expects credentials
                 });
@@ -106,7 +109,7 @@
             const requestId = document.getElementById('requestId').value;
 
             try {
-                const response = await axios.get(`http://localhost:8000/status/${requestId}`);
+                const response = await axios.get(`${baseURL}/status/${requestId}`);
                 const data = response.data;
 
                 const resultsTableBody = document.getElementById('resultsTableBody');
