@@ -1,0 +1,2 @@
+Serial Number,Product Name,Input Image Urls,Output Image Urls
+35,SKU1,"https://i.ibb.co/9gtGM4c/1559020395.jpg, https://i.ibb.co/rfz0XmW/Whats-App-Image-2024-04-17-at-17-30-55.jpg","http://localhost:8000/output_images/17b26f72-1793-4d6f-b191-cf00ad3eb4ad.jpg, http://localhost:8000/output_images/92ec0d59-2f88-4175-b224-8092de8f8805.jpg"

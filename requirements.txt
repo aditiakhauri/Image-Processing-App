@@ -1,0 +1,10 @@
+flask
+flask-sqlalchemy
+celery
+redis
+pillow
+requests
+python-dotenv
+psycopg2-binary
+flask-cors
+pandas
