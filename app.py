@@ -127,7 +127,7 @@ def compress_image(image_url):
         img.save(output_path, quality=50)  # Reduce JPEG quality to 50%
 
         logging.info(f"Image saved to {output_path}")
-        return f'http://localhost:8000/output_images/{output_filename}'
+        return f'http://0.0.0.0:8000/output_images/{output_filename}'
     except requests.exceptions.RequestException as e:
         logging.error(f"Network error while compressing image from URL {image_url}: {e}")
         return None
